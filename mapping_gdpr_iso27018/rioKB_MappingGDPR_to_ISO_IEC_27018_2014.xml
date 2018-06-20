@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ruleml="http://ruleml.org/spec" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ lrml-compact.xsd">
+
+  <lrml:Prefix pre="GDPR" refID="http://akomantoso.org/gdpr#" />
+  <lrml:Prefix pre="ISO_IEC_27018_2014" refID="http://akomantoso.org/ISO_IEC_27018_2014#" />
+  <lrml:Prefix pre="rioOnto" refID="http://akomantoso.org/rioOnto#" />
+  <lrml:Prefix pre="gdprOnto" refID="http://akomantoso.org/gdprOnto#" />
+  <lrml:Prefix pre="ISO_IEC_27018_2014Onto" refID="http://akomantoso.org/ISO_IEC_27018_2014Onto#" />
+  
+  <lrml:LegalSources>         
+	<lrml:LegalSource key="gdprC4S2A33P2source" sameAs="GDPR:cha4-sec2-art33-par2" />
+    <lrml:LegalSource key="ISO_IEC_27018_2014A9I1P2source" sameAs="ISO_IEC_27018_2014:annex9-item1-p2" />
+  </lrml:LegalSources>
+  
+  <lrml:Associations key="GDPR_ISO_IEC_27018_2014">
+    <lrml:Association>
+	  <lrml:appliesSource keyref="#GDPR" />
+      <lrml:appliesSource keyref="#ISO_IEC_27018_2014" />
+      <lrml:toTarget keyref="#ISO_IEC_27018_2014_to_GDPRstatements" />
+    </lrml:Association>
+	<lrml:Association>
+	  <lrml:appliesSource keyref="#gdprC4S2A33P2source" />
+      <lrml:appliesSource keyref="#ISO_IEC_27018_2014A9I1P2source" />
+      <lrml:toTarget keyref="#ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2statements" />
+    </lrml:Association>
+  </lrml:Associations>
+  
+  <lrml:Alternatives key="ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2alternatives">
+	<lrml:Comment>These alternatives are mutually incompatible formalizations of the mapping between control A.9.1 of the ISO_IEC_27018_2014 and Article 33,
+	paragraph 2, of the GPPR. Each alternative refers to the intepretation of a legal authority, which can accept or not the mapping as valid. Each alternative
+	is a ConstitutiveRule of the set of statements ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2statements. Only a single alternative holds at a certain time.
+	</lrml:Comment>
+	<lrml:hasAlternative keyref="#CassazioneCivileItalia"/>
+	<lrml:hasAlternative keyref="#AudienciaDeToledoSpain"/>
+    <lrml:hasAlternative keyref="#TribunalDAvignonFrance"/>
+  </lrml:Alternatives>
+   <lrml:Context key="maternity-alts-ctxt">
+     <lrml:appliesAssociations keyref="#ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2statements"/>
+     <lrml:appliesAlternatives keyref="#ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2alternatives"/>
+   </lrml:Context>
+  
+  <lrml:Statements key="ISO_IEC_27018_2014_to_GDPRstatements">
+<!-- Entailment(s)
+
+NOTE: the constitutive rules in this <lrml:Statements> tag are general, they hold for the two whole documents (GDPR and ISO_IEC_27018_2014). At the present moment,
+we take them for granted (e.g., we take for granted that a PIIProcessor *IS* a dataProcessor). Indeed, they should be made defeasible like the constitutive rules in the next <lrml:Statements> tag.
+		
+	((ISO_IEC_27018_2014Onto:PIIProcessor x), (gdprOnto:dataProcessor x))
+	((ISO_IEC_27018_2014Onto:PIIController x), (gdprOnto:dataController x))
+	((ISO_IEC_27018_2014Onto:PII x), (gdprOnto:personalData x))
+	((ISO_IEC_27018_2014Onto:promptly x), (gdprOnto:nonDelayed x))
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014_to_GDPRrioFormula1">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIProcessor" />
+            <ruleml:Var key=":x">x</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="gdprOnto:dataProcessor" />
+            <ruleml:Var keyref=":x" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014_to_GDPRrioFormula2">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIController" />
+            <ruleml:Var key=":x">x</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="gdprOnto:dataController" />
+            <ruleml:Var keyref=":x" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014_to_GDPRrioFormula3">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+            <ruleml:Var key=":x">x</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="gdprOnto:personalData" />
+            <ruleml:Var keyref=":x" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014_to_GDPRrioFormula4">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:promptly" />
+            <ruleml:Var key=":x">x</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="gdprOnto:nonDelayed" />
+            <ruleml:Var keyref=":x" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+  </lrml:Statements>
+  
+  <lrml:Statements key="ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2statements">
+	<!-- Entailments
+NOTE: the following two Constitutive Rules states that every unauthorized access to PII or every unauthorized access to equipment of facilities where PII are stored *IS ASSUMED TO BE* a data breach. The assumption hold or not depending on the truth value of "(assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea)".
+This is set by the subsequent Constitutive Rules, which refer to certain legal authorities decisions. These are mutually exclusive, as stated in the <alternative>
+tag above with "key=ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2alternatives".
+
+Entailment:
+( 
+	(rioOnto:RexistAtTime a t1) & (rioOnto:and a1 ea eb) & (ISO_IEC_27018_2014Onto:access' ea k z) & (ISO_IEC_27018_2014Onto:PII z) 
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z) 
+	 & (rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea), 
+	
+	(rioOnto:RexistAtTime eb t1) & (gdprOnto:dataBreach eb z) 
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2rioFormula1">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":a1">a1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:and" />
+              <ruleml:Var keyref=":a1" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":eb">eb</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+              <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":eb">eb</ruleml:Var>
+              <ruleml:Var keyref=":t1" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="gdprOnto:dataBreach" />
+              <ruleml:Var keyref=":eb" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+<!--
+Entailment:
+( 	
+	(rioOnto:RexistAtTime ea t1) & (ISO_IEC_27018_2014Onto:access' ea k ef) & (ISO_IEC_27018_2014Onto:PII z) 
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (ISO_IEC_27018_2014Onto:EFof ef z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z)
+	 & (rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea),
+	 
+	(gdprOnto:dataBreach ea z)
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2rioFormula2">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+			  <ruleml:Var key=":ef">ef</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+			  <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":ef" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="gdprOnto:dataBreach" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+<!-- LEGAL INTERPRETATIONS OF THE Constitutive Rules ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2rioFormula1 and ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2rioFormula2. -->
+
+<!-- 
+Entailment:
+(
+	(rioOnto:RexistAtTime ea t1) & (ISO_IEC_27018_2014Onto:access' ea k ef) & (ISO_IEC_27018_2014Onto:PII z) 
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (ISO_IEC_27018_2014Onto:EFof ef z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z),
+	
+	(rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea)
+)
+-->
+	<lrml:ConstitutiveStatement key="CassazioneCivileItalia">
+	  <lrml:Comment>Case Law - Cass. Civ. 12530/2012 Italia: Art. 3.1 of ISO_IEC_27018_2014(en) specifies that data breach is defined as unauthorized access.</lrml:Comment>
+	
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+			  <ruleml:Var key=":ef">ef</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+			  <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":ef" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+		  <ruleml:Atom>
+			<ruleml:Rel iri="rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2" />
+			<ruleml:Var keyref=":ea" />
+		  </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+<!--
+Entailment:
+(
+	(rioOnto:RexistAtTime ea t1) & (ISO_IEC_27018_2014Onto:access' ea k ef) & (ISO_IEC_27018_2014Onto:PII z) 
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (ISO_IEC_27018_2014Onto:EFof ef z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z),
+	
+	neg(rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea)
+)
+-->
+	<lrml:ConstitutiveStatement key="AudienciaDeToledoSpain">
+	  <lrml:Comment>Audiencia de Toledo: Art. 3.1 of ISO_IEC_27018_2014(en) specifies that data breach is a comprimise of security that leads to the unauthorized access; therefore, an authorized access is not a data breach.</lrml:Comment> 
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+			  <ruleml:Var key=":ef">ef</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+			  <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":ef" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+		  <ruleml:Neg>
+			<ruleml:Atom>
+			  <ruleml:Rel iri="rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2" />
+			  <ruleml:Var keyref=":ea" />
+			</ruleml:Atom>
+		  </ruleml:Neg>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+<!-- 
+Entailment:
+(
+	(rioOnto:RexistAtTime ea t1) & (ISO_IEC_27018_2014Onto:access' ea k ef) & (ISO_IEC_27018_2014Onto:PII z) 
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (ISO_IEC_27018_2014Onto:EFof ef z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z)
+	 & naf(rioOnto:exceptionSecurityTest ea),
+	
+	(rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2 ea)
+)
+-->
+	<lrml:ConstitutiveStatement key="TribunalDAvignonFrance">
+	  <lrml:Comment>Tribunal d'Avignon, 43553/2015 France: When a breach of security is part of security tests, such as the ones performed by the company Alpha, leading to unauthorized access, it is not considered as a data breach. In other words, security tests are considered exceptions to the assumption that unauthorized access are data breaches.</lrml:Comment>
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+			  <ruleml:Var key=":ef">ef</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+			  <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":ef" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+			<ruleml:Naf>
+			  <ruleml:Atom>
+				<ruleml:Rel iri="rioOnto:exceptionSecurityTest" />
+				<ruleml:Var keyref=":ea" />
+			  </ruleml:Atom>
+			</ruleml:Naf>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+		  <ruleml:Atom>
+			<ruleml:Rel iri="rioOnto:assumptionISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2" />
+			<ruleml:Var keyref=":ea" />
+		  </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+<!--
+Entailment:
+(
+	(rioOnto:RexistAtTime a1 t1) & (rioOnto:and a1 ea ev et) & (ISO_IEC_27018_2014Onto:company k) & (ISO_IEC_27018_2014Onto:access' ea k ef)
+	 & (ISO_IEC_27018_2014Onto:unauthorized ea) & (ISO_IEC_27018_2014Onto:EFof ef z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z)
+	 & (rioOnto:partOf ea et) & (ISO_IEC_27018_2014Onto:securityTestOn' et ef),
+	
+	(rioOnto:exceptionSecurityTest ea)
+)
+-->
+	<lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2_to_GDPR_C4S2A33P2rioFormula3">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":a1">a1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:and" />
+              <ruleml:Var keyref=":a1" />
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":ev">ev</ruleml:Var>
+			  <ruleml:Var key=":et">et</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:company" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+              <ruleml:Var key=":ef">ef</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+			<ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":ef" />
+			  <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:partOf" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":et" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:securityTestOn'" />
+              <ruleml:Var keyref=":et" />
+			  <ruleml:Var keyref=":ef" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+		  <ruleml:Atom>
+			<ruleml:Rel iri="rioOnto:exceptionSecurityTest" />
+			<ruleml:Var keyref=":ea" />
+		  </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+  </lrml:Statements>
+</lrml:LegalRuleML>
+

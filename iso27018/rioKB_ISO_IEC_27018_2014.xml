@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ruleml="http://ruleml.org/spec" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ lrml-compact.xsd">
+  <lrml:Prefix pre="ISO_IEC_27018_2014" refID="http://akomantoso.org/ISO_IEC_27018_2014#" />
+  <lrml:Prefix pre="rioOnto" refID="http://akomantoso.org/rioOnto#" />
+  <lrml:Prefix pre="ISO_IEC_27018_2014Onto" refID="http://akomantoso.org/ISO_IEC_27018_2014Onto#" />
+  <lrml:LegalSources>
+    <lrml:LegalSource key="ISO_IEC_27018_2014A9I1P2source" sameAs="ISO_IEC_27018_2014:annex9-item1-p2" />
+  </lrml:LegalSources>
+  <lrml:Associations>
+    <lrml:Association>
+      <lrml:appliesSource keyref="#ISO_IEC_27018_2014A9I1P2source" />
+      <lrml:toTarget keyref="#ISO_IEC_27018_2014A9I1P2statements" />
+    </lrml:Association>          
+  </lrml:Associations>
+  <lrml:Statements key="ISO_IEC_27018_2014A9I1P2statements">
+    <!-- 
+Entailment:
+(
+	(rioOnto:RexistAtTime e1 t1) & (ISO_IEC_27018_2014Onto:loss' e1 x), 
+	
+	(rioOnto:RexistAtTime e2 t1) & (ISO_IEC_27018_2014Onto:lda' e2 x)
+)		
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula1">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e1">e1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:loss'" />
+              <ruleml:Var keyref=":e1" />
+              <ruleml:Var key=":x">x</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e2">e2</ruleml:Var>
+              <ruleml:Var keyref=":t1" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":e2" />
+              <ruleml:Var keyref=":x" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <!-- 
+Entailment:
+(
+	(rioOnto:RexistAtTime e1 t1) & (ISO_IEC_27018_2014Onto:disclosure' e1 x), 
+	
+	(rioOnto:RexistAtTime e2 t1) & (ISO_IEC_27018_2014Onto:lda' e2 x)
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula2">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e1">e1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:disclosure'" />
+              <ruleml:Var keyref=":e1" />
+              <ruleml:Var key=":x">x</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e2">e2</ruleml:Var>
+              <ruleml:Var keyref=":t1" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":e2" />
+              <ruleml:Var keyref=":x" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <!-- 
+Entailment:
+(
+	(rioOnto:RexistAtTime e1 t1) & (ISO_IEC_27018_2014Onto:alteration' e1 x), 
+	
+	(rioOnto:RexistAtTime e2 t1) & (ISO_IEC_27018_2014Onto:lda' e2 x)
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula3">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e1">e1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:alteration'" />
+              <ruleml:Var keyref=":e1" />
+              <ruleml:Var key=":x">x</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":e2">e2</ruleml:Var>
+              <ruleml:Var keyref=":t1" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":e2" />
+              <ruleml:Var keyref=":x" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <!-- 
+Entailment:
+(
+	(ISO_IEC_27018_2014Onto:equipment w) & (ISO_IEC_27018_2014Onto:of w z),
+	
+	(ISO_IEC_27018_2014Onto:EFof w z),
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula4">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:equipment" />
+              <ruleml:Var key=":w">w</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:of" />
+              <ruleml:Var keyref=":w" />
+              <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+            <ruleml:Var keyref=":w" />
+            <ruleml:Var keyref=":z" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <!-- 
+Entailment:
+(
+	(ISO_IEC_27018_2014Onto:facility w) & (ISO_IEC_27018_2014Onto:of w z),
+	
+	(ISO_IEC_27018_2014Onto:EFof w z),
+)
+-->
+    <lrml:ConstitutiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula5">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:facility" />
+              <ruleml:Var key=":w">w</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:of" />
+              <ruleml:Var keyref=":w" />
+              <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+            <ruleml:Var keyref=":w" />
+            <ruleml:Var keyref=":z" />
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:ConstitutiveStatement>
+    <!--
+Obligation:
+(
+	(rioOnto:RexistAtTimes a1 t1) & (rioOnto:and a1 ep ec ea ev) & (ISO_IEC_27018_2014Onto:PIIProcessor x) 
+	 & (ISO_IEC_27018_2014Onto:PIIController y) & (ISO_IEC_27018_2014Onto:PII z) & (ISO_IEC_27018_2014Onto:process' ep x z) 
+	 & (ISO_IEC_27018_2014Onto:control' ec y z) & (ISO_IEC_27018_2014Onto:access' ea k z) & (ISO_IEC_27018_2014Onto:unauthorized ea) 
+	 & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z),
+		
+	(rioOnto:RexistAtTimes a2 en) & (rioOnto:>= t2 t1) & (ISO_IEC_27018_2014Onto:notify' en x y ea) & (ISO_IEC_27018_2014Onto:promptly en)
+)
+-->
+    <lrml:PrescriptiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula6">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":a1">a1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:and" />
+              <ruleml:Var keyref=":a1" />
+              <ruleml:Var key=":ep">ep</ruleml:Var>
+              <ruleml:Var key=":ec">ec</ruleml:Var>
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":eb">ev</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIProcessor" />
+              <ruleml:Var key=":x">x</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIController" />
+              <ruleml:Var key=":y">y</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+              <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:process'" />
+              <ruleml:Var keyref=":ep" />
+              <ruleml:Var keyref=":x" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:control'" />
+              <ruleml:Var keyref=":ec" />
+              <ruleml:Var keyref=":y" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <lrml:Obligation iri="rioOnto:Obligation">
+            <ruleml:And>
+              <ruleml:Atom>
+                <ruleml:Rel iri="rioOnto:RexistAtTime" />
+                <ruleml:Var key=":en">en</ruleml:Var>
+                <ruleml:Var key=":t2">t2</ruleml:Var>
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="rioOnto:&gt;=" />
+                <ruleml:Var keyref=":t2" />
+                <ruleml:Var keyref=":t1" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="ISO_IEC_27018_2014Onto:notify'" />
+                <ruleml:Var keyref=":en" />
+                <ruleml:Var keyref=":x" />
+                <ruleml:Var keyref=":y" />
+                <ruleml:Var keyref=":ea" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="ISO_IEC_27018_2014Onto:promptly" />
+                <ruleml:Var keyref=":en" />
+              </ruleml:Atom>
+            </ruleml:And>
+          </lrml:Obligation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+    <!--
+Obligation:
+(
+	(rioOnto:RexistAtTimes a1 t1) & (rioOnto:and a1 ep ec ea ev) & (ISO_IEC_27018_2014Onto:PIIProcessor x) 
+	 & (ISO_IEC_27018_2014Onto:PIIController y) & (ISO_IEC_27018_2014Onto:PII z) & (ISO_IEC_27018_2014Onto:process' ep x z) 
+	 & (ISO_IEC_27018_2014Onto:control' ec y z) & (ISO_IEC_27018_2014Onto:access' ea k w) & (ISO_IEC_27018_2014Onto:unauthorized ea) 
+	 & (ISO_IEC_27018_2014Onto:EFof w z) & (rioOnto:cause ea ev) & (ISO_IEC_27018_2014Onto:lda' ev z),
+			
+	(rioOnto:RexistAtTimes en t2) & (rioOnto:>= t2 t1) & (ISO_IEC_27018_2014Onto:notify' en x y ea) & (ISO_IEC_27018_2014Onto:promptly en)
+)
+-->
+    <lrml:PrescriptiveStatement key="ISO_IEC_27018_2014A9I1P2rioFormula6">
+      <ruleml:Rule closure="universal">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:RexistAtTime" />
+              <ruleml:Var key=":a1">a1</ruleml:Var>
+              <ruleml:Var key=":t1">t1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:and" />
+              <ruleml:Var keyref=":a1" />
+              <ruleml:Var key=":ep">ep</ruleml:Var>
+              <ruleml:Var key=":ec">ec</ruleml:Var>
+              <ruleml:Var key=":ea">ea</ruleml:Var>
+              <ruleml:Var key=":eb">ev</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIProcessor" />
+              <ruleml:Var key=":x">x</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PIIController" />
+              <ruleml:Var key=":y">y</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:PII" />
+              <ruleml:Var key=":z">z</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:process'" />
+              <ruleml:Var keyref=":ep" />
+              <ruleml:Var keyref=":x" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:control'" />
+              <ruleml:Var keyref=":ec" />
+              <ruleml:Var keyref=":y" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:access'" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var key=":k">k</ruleml:Var>
+              <ruleml:Var key=":k">w</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:unauthorized" />
+              <ruleml:Var keyref=":ea" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:EFof" />
+              <ruleml:Var keyref=":w" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="rioOnto:cause" />
+              <ruleml:Var keyref=":ea" />
+              <ruleml:Var keyref=":ev" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="ISO_IEC_27018_2014Onto:lda'" />
+              <ruleml:Var keyref=":ev" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <lrml:Obligation iri="rioOnto:Obligation">
+            <ruleml:And>
+              <ruleml:Atom>
+                <ruleml:Rel iri="rioOnto:RexistAtTime" />
+                <ruleml:Var key=":en">en</ruleml:Var>
+                <ruleml:Var key=":t2">t2</ruleml:Var>
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="rioOnto:&gt;=" />
+                <ruleml:Var keyref=":t2" />
+                <ruleml:Var keyref=":t1" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="ISO_IEC_27018_2014Onto:notify'" />
+                <ruleml:Var keyref=":en" />
+                <ruleml:Var keyref=":x" />
+                <ruleml:Var keyref=":y" />
+                <ruleml:Var keyref=":ea" />
+              </ruleml:Atom>
+              <ruleml:Atom>
+                <ruleml:Rel iri="ISO_IEC_27018_2014Onto:promptly" />
+                <ruleml:Var keyref=":en" />
+              </ruleml:Atom>
+            </ruleml:And>
+          </lrml:Obligation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+  </lrml:Statements>
+</lrml:LegalRuleML>
+
