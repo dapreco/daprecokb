@@ -5540,7 +5540,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art8Par1 :ep),
 
 	(prOnto:lawful :ep)
@@ -5602,7 +5602,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A66">
@@ -6319,8 +6319,8 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :epo1 :epo2 :ehc1 :eau1 :ehc2 :eau2 :enr :eli :eco :ena :eca :eta :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c1) & (prOnto:hasConsented' :ehc1 :w :c1) & (prOnto:authorizedBy' :eau1 :epu1 :c1)
-	 & (rioOnto:not :enr :ehc2) & (prOnto:consent :c2) & (prOnto:hasConsented' :ehc2 :w :c2)
+	 & (prOnto:Consent :c1) & (prOnto:hasConsented' :ehc1 :w :c1) & (prOnto:authorizedBy' :eau1 :epu1 :c1)
+	 & (rioOnto:not :enr :ehc2) & (prOnto:Consent :c2) & (prOnto:hasConsented' :ehc2 :w :c2)
 	 & (prOnto:authorizedBy' :eau2 :epu2 :c2) & (prOnto:linkBetween' :eli :epu1 :epu2) & (prOnto:contextOf :eco :ep)
 	 & (prOnto:natureOf :ena :z) & (rioOnto:cause' :eca :epu2 :ecs) & (prOnto:relatedTo :ecs :w)
 	 & (prOnto:takenToAddress' :eta :em :ecs) & (prOnto:measure :em),
@@ -6395,7 +6395,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c1">c1</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A100">
@@ -6416,7 +6416,7 @@ Obligation:
               <ruleml:Var key=":ehc2">ehc2</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c2">c2</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A102">
@@ -6531,7 +6531,7 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
 
 	(rioOnto:RexistAtTime :ea :t1) & (prOnto:ableTo' :ea :y :ed) & (prOnto:demonstrate' :ed :y :ehc)
 )
@@ -6592,7 +6592,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A114">
@@ -6642,7 +6642,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :eco) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (prOnto:complyWith' :eco :epu GDPR) & (rioOnto:partOf :epu :co) & (prOnto:Contract :co),
 
 	(rioOnto:RexistAtTime :er :t2) & (rioOnto:>= :t1 :t2) & (prOnto:requestOfConsent' :er :y :w) & (prOnto:clearForm :er)
@@ -6688,7 +6688,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A118">
@@ -6757,7 +6757,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
 
 	(rioOnto:RexistAtTime :ew :t1) & (prOnto:withdrawConsentFrom' :ew :w :epu)
 )
@@ -6818,7 +6818,7 @@ Permission:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A124">
@@ -6861,7 +6861,7 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
 
 	(rioOnto:RexistAtTime :en :t2) & (rioOnto:>= :t1 :t2) & (prOnto:Communicate' :en :y :w :ea) & (prOnto:ableTo' :ea :w :ew)
 	 & (prOnto:withdrawConsentFrom' :ew :w :epu)
@@ -6923,7 +6923,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A129">
@@ -6986,7 +6986,7 @@ Obligation:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu),
 
 	(rioOnto:RexistAtTime :a2 :t1) & (rioOnto:and :a2 :ei :eca) & (prOnto:measure :em) & (prOnto:implement' :ei :y :em)
-	 & (rioOnto:cause' :eca :em :ee) & (prOnto:easyAs' :ee :ew :ehc) & (prOnto:consent :c)
+	 & (rioOnto:cause' :eca :em :ee) & (prOnto:easyAs' :ee :ew :ehc) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (prOnto:withdrawConsentFrom' :ew :w :epu)
 )
 -->
@@ -7084,7 +7084,7 @@ Obligation:
                 <ruleml:Var key=":ehc">ehc</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom>
-                <ruleml:Rel iri="prOnto:consent" />
+                <ruleml:Rel iri="prOnto:Consent" />
                 <ruleml:Var key=":c">c</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom keyref=":A139">
@@ -7225,7 +7225,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
+	 & (prOnto:Consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
 	 & (prOnto:authorizedBy' :eau :epu :c),
 
 	(prOnto:lawful :ep)
@@ -7287,7 +7287,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
@@ -7335,7 +7335,7 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
+	 & (prOnto:Consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
 	 & (prOnto:authorizedBy' :eau :epu :c),
 
 	(rioOnto:RexistAtTime :ev :t1) & (prOnto:verify' :ev :y :ehc) & (prOnto:reasonable :ev)
@@ -7397,7 +7397,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
@@ -8231,7 +8231,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:racialOrEthic :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:racialOrEthic :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8297,7 +8297,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A173">
@@ -8337,7 +8337,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:politicalOpinion :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:politicalOpinion :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8403,7 +8403,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A177">
@@ -8443,7 +8443,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:relOrPhilBelief :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:relOrPhilBelief :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8509,7 +8509,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A181">
@@ -8549,7 +8549,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:tradeUnionMembership :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:tradeUnionMembership :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8615,7 +8615,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A185">
@@ -8655,7 +8655,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:geneticData :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:geneticData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8721,7 +8721,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A189">
@@ -8761,7 +8761,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:biometricData :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:biometricData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8827,7 +8827,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A193">
@@ -8867,7 +8867,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Health :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8929,7 +8929,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A197">
@@ -8969,7 +8969,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:sexLifeData :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:sexLifeData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -9035,7 +9035,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A201">
@@ -9075,7 +9075,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:sexualOrientation :z) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:sexualOrientation :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -9141,7 +9141,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A205">
@@ -9322,7 +9322,7 @@ Entailment:
 	 & (prOnto:protect' :epr1 :k1 prOnto:vitalInterest(:w)) & (prOnto:protect' :epr2 :k2 prOnto:vitalInterest(:p)) & (prOnto:naturalPerson :p)
 	 & (rioOnto:imply :ei :eor :ep) & (rioOnto:or :eor2 :eu1 :eu2) & (prOnto:physicallyUnableTo' :eu1 :w :ehc)
 	 & (prOnto:legallyUnableTo' :eu2 :w :ehc) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
 )
@@ -9444,7 +9444,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A221">
@@ -9482,7 +9482,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:notForProfitBody :k) & (rioOnto:partOf :w :k)
 	 & (rioOnto:imply :ei :eac :ep) & (prOnto:relatedTo' :ert :eac :k) & (prOnto:protect' :epr :k :erf)
 	 & (prOnto:rightsAndFreedomsOf' :erf :w) & (rioOnto:or :eor :en :a2) & (rioOnto:not :en :ed)
-	 & (prOnto:disclosure' :ed :k :z) & (rioOnto:and :a2 :ehc :eau) & (prOnto:consent :c)
+	 & (prOnto:disclosure' :ed :k :z) & (rioOnto:and :a2 :ehc :eau) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :ed :c),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -9592,7 +9592,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A229">
@@ -14452,7 +14452,7 @@ Obligation:
 	 & (rioOnto:not :ena4 :ewa4) & (prOnto:awareOf' :ewa4 :z :ea4) & (prOnto:ableTo' :ea4 :w :eli)
 	 & (prOnto:limit' :eli :w :ep) & (rioOnto:not :ena5 :ewa5) & (prOnto:awareOf' :ewa5 :z :ea5)
 	 & (prOnto:ableTo' :ea5 :w :eng) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:not :ena6 :ewa6) & (prOnto:awareOf' :ewa6 :z :ea6) & (prOnto:ableTo' :ea6 :x :elt)
 	 & (prOnto:Transmit' :elt :x :z :k),
 
@@ -14657,7 +14657,7 @@ Obligation:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A501">
@@ -17412,7 +17412,7 @@ Obligation:
 	 & (prOnto:erase' :era :w :z) & (rioOnto:not :ena4 :ewa4) & (prOnto:awareOf' :ewa4 :z :ea4)
 	 & (prOnto:ableTo' :ea4 :w :eli) & (prOnto:limit' :eli :w :ep) & (rioOnto:not :ena5 :ewa5)
 	 & (prOnto:awareOf' :ewa5 :z :ea5) & (prOnto:ableTo' :ea5 :w :eng) & (rioOnto:not :eng :a2)
-	 & (rioOnto:and :a2 :ehc :eau) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (rioOnto:and :a2 :ehc :eau) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:not :ena6 :ewa6) & (prOnto:awareOf' :ewa6 :z :ea6)
 	 & (prOnto:ableTo' :ea6 :x :elt) & (prOnto:Transmit' :elt :x :z :k) & (rioOnto:not :enr :erf)
 	 & (prOnto:receiveFrom' :erf :y :z :w) & (rioOnto:exceptionCha3Sec2Art14Par5Point2 :es) & (rioOnto:exceptionCha3Sec2Art14Par5Point3 :es)
@@ -17611,7 +17611,7 @@ Obligation:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A660">
@@ -20248,7 +20248,7 @@ Obligation:
 	 & (prOnto:ableTo' :ea3 :w :era) & (prOnto:erase' :era :w :z) & (prOnto:Communicate' :en4 :y :w :ea4)
 	 & (prOnto:ableTo' :ea4 :w :eli) & (prOnto:limit' :eli :w :z) & (prOnto:Communicate' :en5 :y :w :ea5)
 	 & (prOnto:ableTo' :ea5 :w :eng) & (rioOnto:not :eng :a3) & (rioOnto:and :a3 :ehc :eau)
-	 & (prOnto:consent :c :ep) & (prOnto:hasConsented' :ehc :w :c :ep) & (prOnto:authorizedBy' :eau :epu :c :ep)
+	 & (prOnto:Consent :c :ep) & (prOnto:hasConsented' :ehc :w :c :ep) & (prOnto:authorizedBy' :eau :epu :c :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -20445,7 +20445,7 @@ Obligation:
                 <ruleml:Var key=":eau">eau</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom>
-                <ruleml:Rel iri="prOnto:consent" />
+                <ruleml:Rel iri="prOnto:Consent" />
                 <ruleml:Var key=":c">c</ruleml:Var>
                 <ruleml:Var keyref=":ep" />
               </ruleml:Atom>
@@ -23315,7 +23315,7 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (rioOnto:exceptionCha3Sec3Art17Par3 :z) & (rioOnto:exceptionCha3Sec1Art12Par2 :ep)
 	 & (rioOnto:exceptionCha2Art11Par2 :ep),
 
@@ -23378,7 +23378,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A940">
@@ -25268,7 +25268,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :eli :eor :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:limit' :eli :w :z) & (rioOnto:or :eor :a2 :ei1 :ei2 :ei3)
-	 & (rioOnto:and :a2 :ehc :eau) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (rioOnto:and :a2 :ehc :eau) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :ep :c) & (rioOnto:imply :ei1 :lc :ep) & (prOnto:legalClaim :lc)
 	 & (rioOnto:imply :ei2 :epr :ep) & (prOnto:protect' :epr :y :erf) & (prOnto:rightsAndFreedomsOf' :erf :k)
 	 & (rioOnto:imply :ei3 :pi :ep) & (prOnto:PublicInterest :pi) & (rioOnto:exceptionCha3Sec1Art12Par2 :ep)
@@ -25343,7 +25343,7 @@ Permission:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1024">
@@ -25820,7 +25820,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:request' :er :w :erf) & (prOnto:receiveFrom' :erf :w :z :y)
 	 & (prOnto:electronicForm :z) & (rioOnto:or :eor1 :a2 :ei) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:consent :c)
+	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :eor2 :ep)
 	 & (rioOnto:or :eor2 :ea :er) & (rioOnto:and :ea :ee :epa) & (prOnto:execute' :ee :s :c)
 	 & (prOnto:Contract :c) & (rioOnto:partOf' :epa :w :c) & (prOnto:requestToEnter' :er :w :c)
@@ -25914,7 +25914,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1051">
@@ -26025,7 +26025,7 @@ Obligation:
 	 & (prOnto:Controller :k :z) & (prOnto:Controller :y :z) & (prOnto:Processor :x)
 	 & (prOnto:nominates' :edp :y :x) & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:request' :er :w :elt)
 	 & (prOnto:Transmit' :elt :x :z :k) & (rioOnto:or :eor1 :a2 :ei) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:consent :c)
+	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :eor2 :ep)
 	 & (rioOnto:or :eor2 :ea :er) & (rioOnto:and :ea :ee :epa) & (prOnto:execute' :ee :s :c)
 	 & (prOnto:Contract :c) & (rioOnto:partOf' :epa :w :c) & (prOnto:requestToEnter' :er :w :c)
@@ -26120,7 +26120,7 @@ Obligation:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1060">
@@ -26475,7 +26475,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:request' :er :w :erf) & (prOnto:receiveFrom' :erf :w :z :y)
 	 & (prOnto:electronicForm :z) & (rioOnto:or :eor1 :a2 :ei) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:consent :c)
+	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :eor2 :ep)
 	 & (rioOnto:or :eor2 :ea :er) & (rioOnto:and :ea :ee :epa) & (prOnto:execute' :ee :s :c)
 	 & (prOnto:Contract :c) & (rioOnto:partOf' :epa :w :c) & (prOnto:requestToEnter' :er :w :c)
@@ -26570,7 +26570,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1080">
@@ -26671,7 +26671,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Controller :k :z) & (prOnto:Processor :x)
 	 & (prOnto:nominates' :edp :y :x) & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:request' :er :w :elt)
 	 & (prOnto:Transmit' :elt :x :z :k) & (rioOnto:or :eor1 :a2 :ei) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:consent :c)
+	 & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :eor2 :ep)
 	 & (rioOnto:or :eor2 :ea :er) & (rioOnto:and :ea :ee :epa) & (prOnto:execute' :ee :s :c)
 	 & (prOnto:Contract :c) & (rioOnto:partOf' :epa :w :c) & (prOnto:requestToEnter' :er :w :c)
@@ -26766,7 +26766,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1092">
@@ -29481,7 +29481,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (prOnto:protect' :epr :y :erf) & (prOnto:rightsAndFreedomsOf' :erf :w),
 
 	(rioOnto:exceptionCha3Sec4Art22Par1Point3 :ep)
@@ -29559,7 +29559,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1242">
@@ -29608,7 +29608,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:racialOrEthic :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -29699,7 +29699,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1249">
@@ -29741,7 +29741,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:politicalOpinion :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -29832,7 +29832,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1254">
@@ -29874,7 +29874,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:relOrPhilBelief :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -29965,7 +29965,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1259">
@@ -30007,7 +30007,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:tradeUnionMembership :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30098,7 +30098,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1264">
@@ -30140,7 +30140,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:geneticData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30231,7 +30231,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1269">
@@ -30273,7 +30273,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:biometricData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30364,7 +30364,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1274">
@@ -30405,7 +30405,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Health :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau) & (prOnto:consent :c)
+	 & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30492,7 +30492,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1279">
@@ -30534,7 +30534,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:sexLifeData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30625,7 +30625,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1284">
@@ -30667,7 +30667,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
 	 & (prOnto:sexualOrientation :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
-	 & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
+	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
 	(rioOnto:exceptionCha3Sec4Art22Par4 :ep)
@@ -30758,7 +30758,7 @@ Entailment:
               <ruleml:Var key=":eau">eau</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A1289">
@@ -52569,7 +52569,7 @@ Permission:
 
 	(rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1) & (rioOnto:and :a2 :ew :ed1 :ed2 :ed3 :eau) & (prOnto:write' :ew :k :c)
 	 & (prOnto:codeOfConduct :c) & (prOnto:describe' :ed1 :c :ew) & (prOnto:Communicate' :en1 :y :w :ew)
-	 & (prOnto:consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:describe' :ed2 :c :epr)
+	 & (prOnto:Consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:describe' :ed2 :c :epr)
 	 & (prOnto:protect' :epr :y :w) & (prOnto:describe' :ed3 :c :ehc) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
 	 & (prOnto:authorizedBy' :eau :epu :c)
 )
@@ -52704,7 +52704,7 @@ Permission:
                 <ruleml:Var keyref=":ew" />
               </ruleml:Atom>
               <ruleml:Atom>
-                <ruleml:Rel iri="prOnto:consent" />
+                <ruleml:Rel iri="prOnto:Consent" />
                 <ruleml:Var key=":c">c</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom>
@@ -59942,7 +59942,7 @@ Permission:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
-	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:consent :c)
+	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
 
@@ -60032,7 +60032,7 @@ Permission:
               <ruleml:Var keyref=":em" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2711">
@@ -60086,7 +60086,7 @@ Permission:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:thirdCountry :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
-	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:consent :c)
+	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
 
@@ -60178,7 +60178,7 @@ Permission:
               <ruleml:Var keyref=":em" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2719">
@@ -60232,7 +60232,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
-	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:consent :c)
+	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
 
@@ -60322,7 +60322,7 @@ Entailment:
               <ruleml:Var keyref=":em" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2727">
@@ -60375,7 +60375,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:thirdCountry :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
-	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:consent :c)
+	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
 
@@ -60467,7 +60467,7 @@ Entailment:
               <ruleml:Var keyref=":em" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2735">
@@ -62707,7 +62707,7 @@ Permission:
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
-	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
 
 	(rioOnto:RexistAtTime :et :t1)
@@ -62806,7 +62806,7 @@ Permission:
               <ruleml:Var key=":ehc">ehc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2844">
@@ -62858,7 +62858,7 @@ Permission:
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:thirdCountry :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
-	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
 
 	(rioOnto:RexistAtTime :et :t1)
@@ -62957,7 +62957,7 @@ Permission:
               <ruleml:Var key=":ehc">ehc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2852">
@@ -63003,7 +63003,7 @@ Entailment:
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
-	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
 
 	(rioOnto:exceptionCha5Art49Par1FromPoint1ToPoint6 :et)
@@ -63102,7 +63102,7 @@ Entailment:
               <ruleml:Var key=":ehc">ehc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2859">
@@ -63147,7 +63147,7 @@ Entailment:
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
 	 & (prOnto:thirdCountry :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
-	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
 
 	(rioOnto:exceptionCha5Art49Par1FromPoint1ToPoint6 :et)
@@ -63246,7 +63246,7 @@ Entailment:
               <ruleml:Var key=":ehc">ehc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:consent" />
+              <ruleml:Rel iri="prOnto:Consent" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2866">
