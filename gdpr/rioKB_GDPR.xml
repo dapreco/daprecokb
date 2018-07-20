@@ -13799,7 +13799,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1)
 	 & (rioOnto:and :a2 :et :o1 :o2) & (prOnto:Transmit' :et :x :z :k) & (rioOnto:or :o1 :eio :etc)
-	 & (prOnto:internationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:or :o2 :ea :ena)
+	 & (prOnto:InternationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:or :o2 :ea :ena)
 	 & (rioOnto:not :ena :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:PersonalDataRecord :p)
 	 & (prOnto:storedIn :es :z :p) & (rioOnto:not :ena1 :ewa1) & (prOnto:awareOf' :ewa1 :z :et)
 	 & (rioOnto:not :ena2 :ewa2) & (prOnto:awareOf' :ewa2 :z :ea) & (rioOnto:not :ena3 :ewa3)
@@ -13888,7 +13888,7 @@ Obligation:
               <ruleml:Var key=":etc">etc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A448">
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":eio" />
               <ruleml:Var keyref=":k" />
             </ruleml:Atom>
@@ -14013,7 +14013,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1)
 	 & (rioOnto:and :a2 :et :o1 :ena) & (prOnto:Transmit' :et :x :z :k) & (rioOnto:or :o1 :eio :etc)
-	 & (prOnto:internationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:not :ena :ea)
+	 & (prOnto:InternationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:not :ena :ea)
 	 & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:measure :em1) & (prOnto:implement' :ei1 :y :em1)
 	 & (prOnto:appropriate :em1) & (prOnto:measure :em2) & (prOnto:implement' :ei2 :y :em2)
 	 & (prOnto:enforce' :ef :em2 :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:PersonalDataRecord :p)
@@ -14109,7 +14109,7 @@ Obligation:
               <ruleml:Var key=":etc">etc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A460">
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":eio" />
               <ruleml:Var keyref=":k" />
             </ruleml:Atom>
@@ -16456,7 +16456,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1)
 	 & (rioOnto:and :a2 :et :o1 :o2) & (prOnto:Transmit' :et :x :z :k) & (rioOnto:or :o1 :eio :etc)
-	 & (prOnto:internationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:or :o2 :ea :ena)
+	 & (prOnto:InternationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:or :o2 :ea :ena)
 	 & (rioOnto:not :ena :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:PersonalDataRecord :p)
 	 & (prOnto:storedIn :es :z :p) & (rioOnto:not :ena1 :ewa1) & (prOnto:awareOf' :ewa1 :z :et)
 	 & (rioOnto:not :ena2 :ewa2) & (prOnto:awareOf' :ewa2 :z :ea) & (rioOnto:not :ena3 :ewa3)
@@ -16547,7 +16547,7 @@ Obligation:
               <ruleml:Var key=":etc">etc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A594">
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":eio" />
               <ruleml:Var keyref=":k" />
             </ruleml:Atom>
@@ -16707,7 +16707,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1)
 	 & (rioOnto:and :a2 :et :o1 :ena) & (prOnto:Transmit' :et :x :z :k) & (rioOnto:or :o1 :eio :etc)
-	 & (prOnto:internationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:not :ena :ea)
+	 & (prOnto:InternationalOrganization' :eio :k) & (prOnto:thirdCountry' :etc :k) & (rioOnto:not :ena :ea)
 	 & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:measure :em1) & (prOnto:implement' :ei1 :y :em1)
 	 & (prOnto:appropriate :em1) & (prOnto:measure :em2) & (prOnto:implement' :ei2 :y :em2)
 	 & (prOnto:enforce' :ef :em2 :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:PersonalDataRecord :p)
@@ -16806,7 +16806,7 @@ Obligation:
               <ruleml:Var key=":etc">etc</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A607">
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":eio" />
               <ruleml:Var keyref=":k" />
             </ruleml:Atom>
@@ -21029,7 +21029,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :et :er :erq) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:internationalOrganization :c) & (prOnto:Transmit' :et :x :z :c) & (prOnto:measure :em)
+	 & (prOnto:InternationalOrganization :c) & (prOnto:Transmit' :et :x :z :c) & (prOnto:measure :em)
 	 & (prOnto:implement' :ei :y :em) & (prOnto:relatedTo' :er :ei :et) & (prOnto:appropriate :em)
 	 & (prOnto:request' :erq :w :ea) & (prOnto:awareOf' :ea :w :ei) & (rioOnto:exceptionCha3Sec1Art12Par2 :ep)
 	 & (rioOnto:exceptionCha2Art11Par2 :ep),
@@ -21077,7 +21077,7 @@ Obligation:
               <ruleml:Var keyref=":x" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A846">
@@ -37643,7 +37643,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:register :r) & (rioOnto:or :eo1 :er1 :er2) & (prOnto:responsibleFor' :er1 :y :r)
 	 & (prOnto:isRepresentedBy :y :k) & (prOnto:Representative :k) & (prOnto:responsibleFor' :er2 :k :r)
-	 & (prOnto:Transmit' :et :x :z :c) & (prOnto:internationalOrganization :c) & (rioOnto:exceptionCha4Sec1Art30Par5),
+	 & (prOnto:Transmit' :et :x :z :c) & (prOnto:InternationalOrganization :c) & (rioOnto:exceptionCha4Sec1Art30Par5),
 
 	(rioOnto:RexistAtTime :a2 :t1) & (rioOnto:and :a2 :ec1 :ec2) & (prOnto:contain' :ec1 :r :et) & (prOnto:contain' :ec2 :r prOnto:contactDetails(:c))
 )
@@ -37725,7 +37725,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Naf>
@@ -37981,7 +37981,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:register :r) & (rioOnto:or :eo1 :er1 :er2) & (prOnto:responsibleFor' :er1 :y :r)
 	 & (prOnto:isRepresentedBy :y :k) & (prOnto:Representative :k) & (prOnto:responsibleFor' :er2 :k :r)
-	 & (prOnto:Transmit' :et :x :z :c) & (prOnto:internationalOrganization :c) & (rioOnto:not :en1 :ea)
+	 & (prOnto:Transmit' :et :x :z :c) & (prOnto:InternationalOrganization :c) & (rioOnto:not :en1 :ea)
 	 & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:legitimateInterestOf' :elf :y)
 	 & (prOnto:complyWith' :ecw :et :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:implement' :eim :y :em1)
@@ -38074,7 +38074,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -39150,7 +39150,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:register :r) & (rioOnto:or :eo1 :er1 :er2)
 	 & (prOnto:responsibleFor' :er1 :x :r) & (prOnto:isRepresentedBy :y :k) & (prOnto:Representative :k)
-	 & (prOnto:responsibleFor' :er2 :k :r) & (prOnto:Transmit' :et :x :z :c) & (prOnto:internationalOrganization :c)
+	 & (prOnto:responsibleFor' :er2 :k :r) & (prOnto:Transmit' :et :x :z :c) & (prOnto:InternationalOrganization :c)
 	 & (rioOnto:exceptionCha4Sec1Art30Par5),
 
 	(rioOnto:RexistAtTime :a2 :t1) & (rioOnto:and :a2 :ec1 :ec2) & (prOnto:contain' :ec1 :r :et) & (prOnto:contain' :ec2 :r prOnto:contactDetails(:c))
@@ -39240,7 +39240,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Naf>
@@ -39514,7 +39514,7 @@ Obligation:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:register :r) & (rioOnto:or :eo1 :er1 :er2)
 	 & (prOnto:responsibleFor' :er1 :x :r) & (prOnto:isRepresentedBy :x :k) & (prOnto:Representative :k)
-	 & (prOnto:responsibleFor' :er2 :k :r) & (prOnto:Transmit' :et :x :z :c) & (prOnto:internationalOrganization :c)
+	 & (prOnto:responsibleFor' :er2 :k :r) & (prOnto:Transmit' :et :x :z :c) & (prOnto:InternationalOrganization :c)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (rioOnto:not :en2 :ei)
 	 & (prOnto:implement' :ei :y :em) & (prOnto:measure :em) & (prOnto:appropriate :em)
 	 & (prOnto:legitimateInterestOf' :elf :y) & (prOnto:complyWith' :ecw :et :erf) & (prOnto:rightsAndFreedomsOf' :erf :w)
@@ -39614,7 +39614,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -53142,7 +53142,7 @@ Permission:
 
 	(rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t2 :t1) & (rioOnto:and :a2 :ew :ed1 :ed2) & (prOnto:write' :ew :k :c)
 	 & (prOnto:codeOfConduct :c) & (prOnto:describe' :ed1 :c :et1) & (prOnto:Transmit' :et1 :x :z :k)
-	 & (prOnto:internationalOrganization :k) & (prOnto:describe' :ed2 :c :et2) & (prOnto:Transmit' :et2 :x :z :co)
+	 & (prOnto:InternationalOrganization :k) & (prOnto:describe' :ed2 :c :et2) & (prOnto:Transmit' :et2 :x :z :co)
 	 & (prOnto:thirdCountry :co)
 )
 -->
@@ -53265,7 +53265,7 @@ Permission:
                 <ruleml:Var key=":k">k</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom>
-                <ruleml:Rel iri="prOnto:internationalOrganization" />
+                <ruleml:Rel iri="prOnto:InternationalOrganization" />
                 <ruleml:Var keyref=":k" />
               </ruleml:Atom>
               <ruleml:Atom keyref=":A2343">
@@ -57135,7 +57135,7 @@ Permission:
 Permission:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ea) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
-	 & (prOnto:Controller :y :z) & (prOnto:internationalOrganization :c) & (prOnto:authorizedBy' :ea :et EuropeanUnion)
+	 & (prOnto:Controller :y :z) & (prOnto:InternationalOrganization :c) & (prOnto:authorizedBy' :ea :et EuropeanUnion)
 	 & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x) & (prOnto:Transmit' :et :x :z :c),
 
 	(rioOnto:RexistAtTime :et :t1)
@@ -57169,7 +57169,7 @@ Permission:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A2539">
@@ -57433,7 +57433,7 @@ Permission:
 Permission:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en :ei1 :er1 :ei2 :er2 :ef) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
-	 & (prOnto:Controller :y :z) & (prOnto:internationalOrganization :c) & (rioOnto:not :en :ea)
+	 & (prOnto:Controller :y :z) & (prOnto:InternationalOrganization :c) & (rioOnto:not :en :ea)
 	 & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:Transmit' :et :x :z :c) & (prOnto:measure :em1) & (prOnto:implement' :ei1 :y :em1)
 	 & (prOnto:relatedTo' :er1 :ei1 :et) & (prOnto:appropriate :em1) & (prOnto:measure :em2)
@@ -57476,7 +57476,7 @@ Permission:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
@@ -59157,7 +59157,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :en3 :elt :elf :ecw :eim :er) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eto)
 	 & (prOnto:Transmit' :eto :x :z :c) & (prOnto:limitedTo' :elt :et :w) & (prOnto:legitimateInterestOf' :elf :y)
 	 & (prOnto:complyWith' :ecw :et :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:implement' :eim :y :em1)
@@ -59230,7 +59230,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -59334,7 +59334,7 @@ Obligation:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :en3 :elt :elf :ecw :eim :er) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eto)
 	 & (prOnto:Transmit' :eto :x :z :c) & (prOnto:limitedTo' :elt :et :w) & (prOnto:legitimateInterestOf' :elf :y)
 	 & (prOnto:complyWith' :ecw :et :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:implement' :eim :y :em1)
@@ -59408,7 +59408,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -59941,7 +59941,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ehc :eau :eno) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -60009,7 +60009,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -60231,7 +60231,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ehc :eau :eno) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:Consent :c)
 	 & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :et :c) & (prOnto:Communicate' :eno :y :w :er)
 	 & (prOnto:riskFor' :er :w) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -60299,7 +60299,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -60521,7 +60521,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :ep1 :ep2) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :ee :et)
 	 & (prOnto:execute' :ee :k :co) & (prOnto:Contract :co) & (prOnto:partyOf' :ep1 :w :co)
 	 & (prOnto:partyOf' :ep2 :y :co) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -60589,7 +60589,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -60809,7 +60809,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :ep1 :ep2) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :ee :et)
 	 & (prOnto:execute' :ee :k :co) & (prOnto:Contract :co) & (prOnto:partyOf' :ep1 :w :co)
 	 & (prOnto:partyOf' :ep2 :y :co) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -60877,7 +60877,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -61097,7 +61097,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :ep1 :eh) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :ee :et)
 	 & (prOnto:execute' :ee :k :co) & (prOnto:Contract :co) & (prOnto:partyOf' :ep1 :w :co)
 	 & (prOnto:legitimateInterestOf' :eh :w) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -61165,7 +61165,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -61383,7 +61383,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :ep1 :eh) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :ee :et)
 	 & (prOnto:execute' :ee :k :co) & (prOnto:Contract :co) & (prOnto:partyOf' :ep1 :w :co)
 	 & (prOnto:legitimateInterestOf' :eh :w) & (rioOnto:exceptionCha5Art49Par3 :et),
@@ -61451,7 +61451,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -61669,7 +61669,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :eor) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :epi :et)
 	 & (prOnto:PublicInterest' :epi :p) & (rioOnto:or :eor :er1 :er2) & (prOnto:recognize' :er1 :p EuropeanUnion)
 	 & (prOnto:recognize' :er2 :p prOnto:MSof(:y)),
@@ -61736,7 +61736,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -61951,7 +61951,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :eor) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :epi :et)
 	 & (prOnto:PublicInterest' :epi :p) & (rioOnto:or :eor :er1 :er2) & (prOnto:recognize' :er1 :p EuropeanUnion)
 	 & (prOnto:recognize' :er2 :p prOnto:MSof(:y)),
@@ -62018,7 +62018,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -62233,7 +62233,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :eo) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :lc :et)
 	 & (prOnto:legalClaim :lc),
 
@@ -62299,7 +62299,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -62469,7 +62469,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :eo) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :lc :et)
 	 & (prOnto:legalClaim :lc),
 
@@ -62535,7 +62535,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -62705,7 +62705,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :en3 :ei) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
 	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
@@ -62772,7 +62772,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -63001,7 +63001,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :en3 :ei) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:not :en3 :eat)
 	 & (prOnto:ableTo' :eat :w :ehc) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (rioOnto:imply :ei :epr :et) & (prOnto:protect' :epr :k prOnto:vitalInterest(:w)),
@@ -63068,7 +63068,7 @@ Entailment:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -63291,7 +63291,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :epo :eat :elt) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :r :et)
 	 & (prOnto:register :r) & (prOnto:Communicate' :en :r :p :i) & (prOnto:public :p)
 	 & (prOnto:ableTo' :eat :p :r) & (prOnto:access' :ecc :p :r) & (prOnto:limitedTo' :elt :et :w),
@@ -63360,7 +63360,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -63441,7 +63441,7 @@ Permission:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :en1 :en2 :ei :epo :eac :eor :elt) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (rioOnto:not :en1 :ea) & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (prOnto:Transmit' :et :x :z :c)
-	 & (prOnto:internationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
+	 & (prOnto:InternationalOrganization :c) & (rioOnto:not :en2 :eim) & (prOnto:implement' :eim :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (rioOnto:imply :ei :r :et)
 	 & (prOnto:register :r) & (prOnto:Communicate' :en :r :p :i) & (prOnto:public :p)
 	 & (prOnto:ableTo' :eat :k :ecc) & (prOnto:access' :ecc :k :r) & (rioOnto:or :eor :eau1 :eau2)
@@ -63512,7 +63512,7 @@ Permission:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -64262,7 +64262,7 @@ Obligation:
 	 & (prOnto:nominates' :edp :y :x) & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:register :r)
 	 & (rioOnto:or :eo1 :er1 :er2) & (prOnto:responsibleFor' :er1 :y :r) & (prOnto:isRepresentedBy :y :k)
 	 & (prOnto:Representative :k) & (prOnto:responsibleFor' :er2 :k :r) & (prOnto:Transmit' :et :x :z :k)
-	 & (prOnto:countryOf :k :c) & (prOnto:internationalOrganization :c) & (rioOnto:not :en1 :ea)
+	 & (prOnto:countryOf :k :c) & (prOnto:InternationalOrganization :c) & (rioOnto:not :en1 :ea)
 	 & (prOnto:authorizedBy' :ea :et EuropeanUnion) & (rioOnto:not :en2 :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:measure :em) & (prOnto:appropriate :em) & (prOnto:legitimateInterestOf' :elf :y)
 	 & (prOnto:complyWith' :ecw :et :erf) & (prOnto:rightsAndFreedomsOf' :erf :w) & (prOnto:implement' :eim :y :em1)
@@ -64372,7 +64372,7 @@ Obligation:
               <ruleml:Var key=":c">c</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:internationalOrganization" />
+              <ruleml:Rel iri="prOnto:InternationalOrganization" />
               <ruleml:Var keyref=":c" />
             </ruleml:Atom>
             <ruleml:Atom>
