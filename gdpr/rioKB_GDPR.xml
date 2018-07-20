@@ -7802,7 +7802,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:geneticData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:GeneticData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
 
 	(rioOnto:RexistAtTime :en :t1) & (rioOnto:not :en :ep)
 )
@@ -7851,7 +7851,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Naf>
@@ -7886,7 +7886,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:biometricData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:BiometricData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
 
 	(rioOnto:RexistAtTime :en :t1) & (rioOnto:not :en :ep)
 )
@@ -7935,7 +7935,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Naf>
@@ -8060,7 +8060,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:sexLifeData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:SexualData :z) & (rioOnto:exceptionCha2Art9Par2 :ep),
 
 	(rioOnto:RexistAtTime :en :t1) & (rioOnto:not :en :ep)
 )
@@ -8109,7 +8109,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Naf>
@@ -8655,7 +8655,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:geneticData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:GeneticData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8717,7 +8717,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -8761,7 +8761,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:biometricData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:BiometricData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -8823,7 +8823,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -8969,7 +8969,7 @@ Entailment:
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ehc :eau :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:sexLifeData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
+	 & (prOnto:SexualData :z) & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c)
 	 & (prOnto:authorizedBy' :eau :epu :c) & (rioOnto:exceptionCha2Art9Par2Pnt1 :ep),
 
 	(rioOnto:exceptionCha2Art9Par2 :ep)
@@ -9031,7 +9031,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -30139,7 +30139,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:geneticData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
+	 & (prOnto:GeneticData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
 	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
@@ -30216,7 +30216,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -30272,7 +30272,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:biometricData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
+	 & (prOnto:BiometricData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
 	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
@@ -30349,7 +30349,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -30533,7 +30533,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:relatedTo :ep :ei) & (prOnto:implement' :ei :y :em)
 	 & (prOnto:automatedDecisionMaking :em) & (prOnto:Purpose :epu) & (prOnto:isBasedOn :ep :epu)
-	 & (prOnto:sexLifeData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
+	 & (prOnto:SexualData :z) & (rioOnto:not :eng :a2) & (rioOnto:and :a2 :ehc :eau)
 	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art9Par2Point7 :en),
 
@@ -30610,7 +30610,7 @@ Entailment:
               <ruleml:Var keyref=":epu" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -32793,7 +32793,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:geneticData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:GeneticData :z),
 
 	(rioOnto:exceptionCha4Sec1Art27Par2Point1A9P1orA10 :z)
 )
@@ -32843,7 +32843,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -32864,7 +32864,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:biometricData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:BiometricData :z),
 
 	(rioOnto:exceptionCha4Sec1Art27Par2Point1A9P1orA10 :z)
 )
@@ -32914,7 +32914,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -33011,7 +33011,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:sexLifeData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:SexualData :z),
 
 	(rioOnto:exceptionCha4Sec1Art27Par2Point1A9P1orA10 :z)
 )
@@ -33061,7 +33061,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -40640,7 +40640,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:geneticData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:GeneticData :z),
 
 	(rioOnto:exceptionCha4Sec1Art30Par5_sub :z)
 )
@@ -40690,7 +40690,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -40711,7 +40711,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:biometricData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:BiometricData :z),
 
 	(rioOnto:exceptionCha4Sec1Art30Par5_sub :z)
 )
@@ -40761,7 +40761,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -40858,7 +40858,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:sexLifeData :z),
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:SexualData :z),
 
 	(rioOnto:exceptionCha4Sec1Art30Par5_sub :z)
 )
@@ -40908,7 +40908,7 @@ Entailment:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -45127,7 +45127,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:geneticData :z) & (prOnto:largeScale :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:GeneticData :z) & (prOnto:largeScale :ep)
 	 & (rioOnto:exceptionCha4Sec3Art35Par10 :ep),
 
 	(rioOnto:RexistAtTime :ev :t2) & (rioOnto:>= :t1 :t2) & (prOnto:verify' :ev :y :eco) & (prOnto:complyWith' :eco :ep GDPR)
@@ -45177,7 +45177,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -45228,7 +45228,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:biometricData :z) & (prOnto:largeScale :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:BiometricData :z) & (prOnto:largeScale :ep)
 	 & (rioOnto:exceptionCha4Sec3Art35Par10 :ep),
 
 	(rioOnto:RexistAtTime :ev :t2) & (rioOnto:>= :t1 :t2) & (prOnto:verify' :ev :y :eco) & (prOnto:complyWith' :eco :ep GDPR)
@@ -45278,7 +45278,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -45435,7 +45435,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:sexLifeData :z) & (prOnto:largeScale :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:SexualData :z) & (prOnto:largeScale :ep)
 	 & (rioOnto:exceptionCha4Sec3Art35Par10 :ep),
 
 	(rioOnto:RexistAtTime :ev :t2) & (rioOnto:>= :t1 :t2) & (prOnto:verify' :ev :y :eco) & (prOnto:complyWith' :eco :ep GDPR)
@@ -45485,7 +45485,7 @@ Obligation:
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
             <ruleml:Atom>
@@ -48198,7 +48198,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ei) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:publicAuthority :x) & (prOnto:PersonalDataProcessing' :ep :x :z)
-	 & (prOnto:largeScale :ep) & (prOnto:geneticData :z),
+	 & (prOnto:largeScale :ep) & (prOnto:GeneticData :z),
 
 	(rioOnto:RexistAtTime :ed :t2) & (rioOnto:>= :t2 :t1) & (prOnto:designates' :ed :y :k) & (prOnto:DPO :k)
 )
@@ -48246,7 +48246,7 @@ Obligation:
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:geneticData" />
+              <ruleml:Rel iri="prOnto:GeneticData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -48285,7 +48285,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ei) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:publicAuthority :x) & (prOnto:PersonalDataProcessing' :ep :x :z)
-	 & (prOnto:largeScale :ep) & (prOnto:biometricData :z),
+	 & (prOnto:largeScale :ep) & (prOnto:BiometricData :z),
 
 	(rioOnto:RexistAtTime :ed :t2) & (rioOnto:>= :t2 :t1) & (prOnto:designates' :ed :y :k) & (prOnto:DPO :k)
 )
@@ -48333,7 +48333,7 @@ Obligation:
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:biometricData" />
+              <ruleml:Rel iri="prOnto:BiometricData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
@@ -48464,7 +48464,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :ei) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:publicAuthority :x) & (prOnto:PersonalDataProcessing' :ep :x :z)
-	 & (prOnto:largeScale :ep) & (prOnto:sexLifeData :z),
+	 & (prOnto:largeScale :ep) & (prOnto:SexualData :z),
 
 	(rioOnto:RexistAtTime :ed :t2) & (rioOnto:>= :t2 :t1) & (prOnto:designates' :ed :y :k) & (prOnto:DPO :k)
 )
@@ -48512,7 +48512,7 @@ Obligation:
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:sexLifeData" />
+              <ruleml:Rel iri="prOnto:SexualData" />
               <ruleml:Var keyref=":z" />
             </ruleml:Atom>
           </ruleml:And>
