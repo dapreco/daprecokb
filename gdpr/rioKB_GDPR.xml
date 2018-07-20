@@ -4481,7 +4481,7 @@ Obligation:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z),
 
 	(rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t1 :t2) & (rioOnto:and :a2 :ei :ec1 :ec2 :ec3 :er :ed) & (prOnto:measure :em)
-	 & (prOnto:implement' :ei :y :em) & (rioOnto:cause' :ec1 :em :el) & (prOnto:lawful' :el :ep)
+	 & (prOnto:implement' :ei :y :em) & (rioOnto:cause' :ec1 :em :el) & (prOnto:lawfulness' :el :ep)
 	 & (rioOnto:cause' :ec2 :em :ef) & (prOnto:fair' :ef :ep) & (rioOnto:cause' :ec3 :em :et)
 	 & (prOnto:transparent' :et :ep) & (prOnto:relatedTo :ep :w) & (prOnto:describe' :ed :y :ei)
 )
@@ -4572,7 +4572,7 @@ Obligation:
                 <ruleml:Var key=":el">el</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom keyref=":A5">
-                <ruleml:Rel iri="prOnto:lawful" />
+                <ruleml:Rel iri="prOnto:lawfulness" />
                 <ruleml:Var keyref=":el" />
                 <ruleml:Var keyref=":ep" />
               </ruleml:Atom>
@@ -4626,7 +4626,7 @@ Obligation:
 
 	(rioOnto:RexistAtTime :a2 :t2) & (rioOnto:>= :t1 :t2) & (rioOnto:and :a2 :ei :ec1 :ec2 :ec3 :ed) & (prOnto:measure :em)
 	 & (prOnto:implement' :ei :y :em) & (rioOnto:cause' :ec1 :em :es) & (prOnto:specified' :es :epu)
-	 & (rioOnto:cause' :ec2 :em :el) & (prOnto:lawful' :el :epu) & (rioOnto:cause' :ec3 :em :ecw)
+	 & (rioOnto:cause' :ec2 :em :el) & (prOnto:lawfulness' :el :epu) & (rioOnto:cause' :ec3 :em :ecw)
 	 & (prOnto:compatibileWith' :ecw :ep :epu) & (prOnto:describe' :ed :y :ei)
 )
 -->
@@ -4735,7 +4735,7 @@ Obligation:
                 <ruleml:Var key=":el">el</ruleml:Var>
               </ruleml:Atom>
               <ruleml:Atom keyref=":A17">
-                <ruleml:Rel iri="prOnto:lawful" />
+                <ruleml:Rel iri="prOnto:lawfulness" />
                 <ruleml:Var keyref=":el" />
                 <ruleml:Var keyref=":epu" />
               </ruleml:Atom>
@@ -5543,7 +5543,7 @@ Entailment:
 	 & (prOnto:Consent :c) & (prOnto:hasConsented' :ehc :w :c) & (prOnto:authorizedBy' :eau :epu :c)
 	 & (rioOnto:exceptionCha2Art8Par1 :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -5628,7 +5628,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -5647,7 +5647,7 @@ Entailment:
 	 & (rioOnto:and :ea :ee :epa) & (prOnto:execute' :ee :c :c) & (prOnto:Contract :c)
 	 & (prOnto:partyOf' :epa :w :c) & (prOnto:requestToEnter' :er :w :c),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -5739,7 +5739,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -5756,7 +5756,7 @@ Entailment:
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:Obliged' :eo :y :e :t1) & (rioOnto:imply :ei :e :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -5823,7 +5823,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -5841,7 +5841,7 @@ Entailment:
 	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:or :eor :epr1 :epr2) & (prOnto:protect' :epr1 :k1 prOnto:vitalInterest(:w))
 	 & (prOnto:protect' :epr2 :k2 prOnto:vitalInterest(:p)) & (prOnto:naturalPerson :p) & (rioOnto:imply :ei :eor :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -5928,7 +5928,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -5948,7 +5948,7 @@ Entailment:
 	 & (prOnto:PublicInterest :pi) & (prOnto:publicPowers :pp) & (prOnto:hold' :eh :y :pp)
 	 & (rioOnto:imply :ei :y :pp) & (rioOnto:exceptionCha3Sec4Art21Par1 :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -6061,7 +6061,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -6082,7 +6082,7 @@ Entailment:
 	 & (prOnto:riskFor' :er1 :eli3) & (prOnto:legitimateInterestOf' :eli3 :w) & (prOnto:riskFor' :er2 :erf)
 	 & (prOnto:rightsAndFreedomsOf' :erf :w) & (rioOnto:imply :ei :eor :ep) & (rioOnto:exceptionCha3Sec4Art21Par1 :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -6212,7 +6212,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -6228,7 +6228,7 @@ Entailment:
 	 & (prOnto:publicAuthority :k) & (prOnto:PersonalDataProcessing' :ep :x :z) & (prOnto:execute' :ee :k :et)
 	 & (rioOnto:imply :ei :et :ep) & (rioOnto:exceptionCha3Sec4Art21Par1 :ep),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -6303,7 +6303,7 @@ Entailment:
         <ruleml:then>
           <ruleml:And>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
           </ruleml:And>
@@ -7228,7 +7228,7 @@ Entailment:
 	 & (prOnto:Consent :c) & (rioOnto:< prOnto:ageOf(:w) prOnto:minAgeForConsent(:c)) & (prOnto:hasConsented' :ehc prOnto:holderOfPR(:w) :c)
 	 & (prOnto:authorizedBy' :eau :epu :c),
 
-	(prOnto:lawful :ep)
+	(prOnto:lawfulness :ep)
 )
 -->
       <ruleml:Rule closure="universal">
@@ -7320,7 +7320,7 @@ Entailment:
         </ruleml:if>
         <ruleml:then>
           <ruleml:Atom>
-            <ruleml:Rel iri="prOnto:lawful" />
+            <ruleml:Rel iri="prOnto:lawfulness" />
             <ruleml:Var keyref=":ep" />
           </ruleml:Atom>
         </ruleml:then>
@@ -23041,7 +23041,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :en :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :en :el) & (prOnto:lawful' :el :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :en :el) & (prOnto:lawfulness' :el :ep)
 	 & (rioOnto:exceptionCha3Sec3Art17Par3 :z) & (rioOnto:exceptionCha3Sec3Art18Par1Point2 :z) & (rioOnto:exceptionCha3Sec1Art12Par2 :ep)
 	 & (rioOnto:exceptionCha2Art11Par2 :ep),
 
@@ -23099,7 +23099,7 @@ Obligation:
               <ruleml:Var key=":el">el</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A930">
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":el" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
@@ -24355,7 +24355,7 @@ Obligation:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :enl :er :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :enl :el) & (prOnto:lawful' :el :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :enl :el) & (prOnto:lawfulness' :el :ep)
 	 & (prOnto:request' :er :y :eli) & (prOnto:limit' :eli :w :z) & (rioOnto:exceptionCha3Sec1Art12Par2 :ep)
 	 & (rioOnto:exceptionCha2Art11Par2 :ep),
 
@@ -24414,7 +24414,7 @@ Obligation:
               <ruleml:Var key=":el">el</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A982">
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":el" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
@@ -24468,7 +24468,7 @@ Entailment:
 (
 	(rioOnto:RexistAtTime :a1 :t1) & (rioOnto:and :a1 :ep :enl :er :edp) & (prOnto:DataSubject :w) & (prOnto:PersonalData :z :w)
 	 & (prOnto:Controller :y :z) & (prOnto:Processor :x) & (prOnto:nominates' :edp :y :x)
-	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :enl :el) & (prOnto:lawful' :el :ep)
+	 & (prOnto:PersonalDataProcessing' :ep :x :z) & (rioOnto:not :enl :el) & (prOnto:lawfulness' :el :ep)
 	 & (prOnto:request' :er :y :eli) & (prOnto:limit' :eli :w :z) & (rioOnto:exceptionCha2Art11Par2 :ep),
 
 	(rioOnto:exceptionCha3Sec3Art18Par1Point2 :z)
@@ -24526,7 +24526,7 @@ Entailment:
               <ruleml:Var key=":el">el</ruleml:Var>
             </ruleml:Atom>
             <ruleml:Atom keyref=":A987">
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":el" />
               <ruleml:Var keyref=":ep" />
             </ruleml:Atom>
@@ -65837,7 +65837,7 @@ Entailment:
 	 & (prOnto:violationOf' :evf GDPR) & (rioOnto:or :eor :en1 :en2) & (rioOnto:not :en1 :ec1)
 	 & (prOnto:complyWith' :ec1 :x GDPRx) & (rioOnto:partOf GDPRx GDPR) & (prOnto:relatedTo GDPRx :x)
 	 & (rioOnto:not :en2 :ec2) & (prOnto:complyWith' :ec2 :x :ery) & (prOnto:request' :ery :y :e)
-	 & (prOnto:relatedTo :e GDPR) & (prOnto:lawful :e),
+	 & (prOnto:relatedTo :e GDPR) & (prOnto:lawfulness :e),
 
 	(rioOnto:exceptionCha8Art82Par2 :d)
 )
@@ -65955,7 +65955,7 @@ Entailment:
               <ruleml:Ind>GDPR</ruleml:Ind>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":e" />
             </ruleml:Atom>
           </ruleml:And>
@@ -65980,7 +65980,7 @@ Obligation:
 	 & (prOnto:violationOf' :evf GDPR) & (rioOnto:or :eor :en1 :en2) & (rioOnto:not :en1 :ec1)
 	 & (prOnto:complyWith' :ec1 :x GDPRx) & (rioOnto:partOf GDPRx GDPR) & (prOnto:relatedTo GDPRx :x)
 	 & (rioOnto:not :en2 :ec2) & (prOnto:complyWith' :ec2 :x :ery) & (prOnto:request' :ery :y :e)
-	 & (prOnto:relatedTo :e GDPR) & (prOnto:lawful :e) & (rioOnto:exceptionCha8Art82Par3 :x),
+	 & (prOnto:relatedTo :e GDPR) & (prOnto:lawfulness :e) & (rioOnto:exceptionCha8Art82Par3 :x),
 
 	(rioOnto:RexistAtTime :erf :t1) & (prOnto:responsibleFor' :erf :x :d)
 )
@@ -66098,7 +66098,7 @@ Obligation:
               <ruleml:Ind>GDPR</ruleml:Ind>
             </ruleml:Atom>
             <ruleml:Atom>
-              <ruleml:Rel iri="prOnto:lawful" />
+              <ruleml:Rel iri="prOnto:lawfulness" />
               <ruleml:Var keyref=":e" />
             </ruleml:Atom>
             <ruleml:Naf>
